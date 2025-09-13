@@ -1,0 +1,55 @@
+.pluginContainer {
+  padding: 20px;
+  display: flex;
+  justify-content: center; /* Center elements horizontally */
+  align-items: flex-start;
+  flex-direction: column;
+
+  .flexContainer {
+    display: flex;
+    justify-content: flex-start; /* Align all elements to the left */
+    align-items: flex-start;
+  }
+
+  .svgContainer {
+    margin-right: 20px;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text content to the left */
+  }
+
+  .title {
+    font-weight: bold;
+    color: #fff;
+    margin: 0;
+  }
+
+  .text {
+    color: #aaa;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+
+  .buttonContainer {
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-start;
+
+    .enableButton {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+
+      &:hover {
+        background-color: #0056b3;
+      }
+    }
+  }
+}
