@@ -1,0 +1,37 @@
+{
+  "name": "dro-magic-discord-bot",
+  "version": "1.0.0",
+  "private": "false",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "bot": "node ./app/bot/index.js",
+    "test-bot": "node ./app/bot/test/index.js"
+  },
+  "dependencies": {
+    "@auth/prisma-adapter": "^2.10.0",
+    "@heroicons/react": "^2.2.0",
+    "@prisma/client": "^6.16.1",
+    "@tailwindcss/forms": "^0.5.10",
+    "autoprefixer": "^10.4.21",
+    "axios": "^1.12.1",
+    "bcrypt": "^6.0.0",
+    "discord.js": "^14.22.1",
+    "dotenv": "^17.2.2",
+    "next": "^15.5.3",
+    "next-auth": "^4.24.11",
+    "postcss": "^8.5.6",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-hot-toast": "^2.6.0",
+    "sass": "^1.92.1",
+    "supports-color": "^10.2.2",
+    "tailwindcss": "^4.1.13"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.1.13",
+    "prisma": "^6.16.1"
+  }
+}
