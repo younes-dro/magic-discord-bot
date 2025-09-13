@@ -1,14 +1,14 @@
-'use client'
-import styles from './styles.module.scss'
-import Plugin from '@/app/components/dashboard/plugin/Plugin'
-import Image from 'next/image'
-import data from './data'
+"use client";
+import styles from "./styles.module.scss";
+import Plugin from "@/app/components/dashboard/plugin/Plugin";
+import Image from "next/image";
+import data from "./data";
 
 const page = () => {
+  const handleEnable = () => {
+    alert("ok");
+  };
 
-    const handleEnable = () =>{
-        alert('ok')
-    }
   return (
     <div className={styles.home}>
       {data.map((pluginData, index) => (
@@ -21,9 +21,8 @@ const page = () => {
           />
         </div>
       ))}
-
     </div>
-  )
-}
+  );
+};
 
-export default page
+export default page;
