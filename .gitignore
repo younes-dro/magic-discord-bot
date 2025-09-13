@@ -4,8 +4,13 @@
 /node_modules
 /.pnp
 .pnp.js
+
+# env 
 .env
 .env.local
+
+# bot token
+app/bot/config.js
 
 # testing
 /coverage
