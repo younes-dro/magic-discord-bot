@@ -23,7 +23,7 @@ module.exports = (client) => {
       const customCommands = await getCustomCommandsForUserByServerId(serverId);
       // console.log('Custom commands for user:', customCommands);
       // console.log( 'user message' , userMessage)
-      if( customCommands.length > 0 ) {
+      if (customCommands.length > 0) {
         customCommandHandler.handleCustomCommands(userMessage, customCommands, message);
       }
     }

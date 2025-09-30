@@ -10,12 +10,17 @@ const Menu = () => {
         <div className={styles.item} key={item.id}>
           <span className={styles.title}>{item.title}</span>
           {item.listItems.map((listItem) => (
-            <Link href={`/admin${listItem.url}`} className={styles.listItem} key={listItem.id}>
-              <Image 
-              src={`/assets/dashboard/images/menu/${listItem.icon}`}
-              width={20}
-              height={20}
-              alt="" />
+            <Link
+              href={`/admin${listItem.url}`}
+              className={styles.listItem}
+              key={listItem.id}
+            >
+              <Image
+                src={`/assets/dashboard/images/menu/${listItem.icon}`}
+                width={20}
+                height={20}
+                alt=""
+              />
               <span className={styles.listItemTitle}>{listItem.title}</span>
             </Link>
           ))}
