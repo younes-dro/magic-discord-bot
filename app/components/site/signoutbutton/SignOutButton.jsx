@@ -1,12 +1,10 @@
-
-'use client'
-import Link from 'next/link';
-import React from 'react';
+"use client";
+import Link from "next/link";
+import React from "react";
 // import { signOut } from './auth';
 // import { useRouter } from 'next/navigation';
 
 const SignOutButton = () => {
-
   // const router = useRouter();
 
   // const handleSignOut = async () => {
@@ -17,12 +15,10 @@ const SignOutButton = () => {
   // };
 
   return (
-    <Link href='/api/auth/signout'>
-    <button
-      className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
-    >
-      Sign Out
-    </button>
+    <Link href="/api/auth/signout">
+      <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+        Sign Out
+      </button>
     </Link>
   );
 };

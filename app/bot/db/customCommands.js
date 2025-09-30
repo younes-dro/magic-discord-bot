@@ -8,9 +8,9 @@ async function getUserIdFromServerId(serverId) {
       where: {
         serverId: serverId,
       },
-    //   select: {
-    //     userId: true,
-    //   },
+      //   select: {
+      //     userId: true,
+      //   },
     });
 
     if (server) {
@@ -25,29 +25,29 @@ async function getUserIdFromServerId(serverId) {
 }
 
 async function getCustomCommandsForUserByServerId(serverId) {
-    try {
-      const userId = await getUserIdFromServerId(serverId);
-  
-      if (userId) {
-        const customCommands = await prisma.CustomCommnad.findMany({
-          where: {
-            userId: userId,
-          },
-          select: {
-            customCommand: true,
-          },
-        });
-  
-        // Extract and return the custom commands
-        return customCommands.map((command) => command.customCommand);
-      } else {
-        return [];
-      }
-    } catch (error) {
-      console.error('Error retrieving custom commands for user by server ID:', error);
+  try {
+    const userId = await getUserIdFromServerId(serverId);
+
+    if (userId) {
+      const customCommands = await prisma.CustomCommnad.findMany({
+        where: {
+          userId: userId,
+        },
+        select: {
+          customCommand: true,
+        },
+      });
+
+      // Extract and return the custom commands
+      return customCommands.map((command) => command.customCommand);
+    } else {
       return [];
     }
+  } catch (error) {
+    console.error('Error retrieving custom commands for user by server ID:', error);
+    return [];
   }
+}
 
 module.exports = {
   getUserIdFromServerId,

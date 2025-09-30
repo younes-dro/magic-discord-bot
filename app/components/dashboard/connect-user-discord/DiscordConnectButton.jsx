@@ -1,11 +1,8 @@
-'use client'
-import React from 'react';
+"use client";
+import React from "react";
 
-const DiscordConnectButton = ( {clientId}) => {
-
-
+const DiscordConnectButton = ({ clientId }) => {
   const handleConnect = () => {
-    
     window.location.href = `https://discord.com/oauth2/authorize?client_id=${clientId}&scope=bot&permissions=8`;
   };
 

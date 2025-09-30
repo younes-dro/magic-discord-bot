@@ -9,7 +9,7 @@ const client = new Client({
     GatewayIntentBits.GuildMessageTyping,
     GatewayIntentBits.DirectMessages,
   ],
-  partials: [ Partials.Message, Partials.Channel, Partials.Reaction ],
+  partials: [Partials.Message, Partials.Channel, Partials.Reaction],
 });
 
 client.on('ready', (c) => {
