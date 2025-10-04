@@ -1,6 +1,6 @@
 ## Magic Discord Bot
 
-Magic Discord Bot is a Next.js application that allows users to connect their Discord bot (via token) and create custom bot commands. These commands can be mapped to memberships or WooCommerce products on a website. For example, a user can buy a membership directly by typing a custom command in Discord.
+Magic Discord Bot is a Next.js application that allows users to connect their Discord bot and create custom bot commands. Users can define commands that their bot will respond to directly in Discord.
 
 ---
 
@@ -18,11 +18,13 @@ Create `.env` and `.env.local` files with the following values:
 
 ```bash
 # .env
-DATABASE_URL="mongodb+srv://ets_bot:rR8EjGm4MJWEzNA@cluster0.b5paofh.mongodb.net/test"
+DATABASE_URL="your_database_connection_string_here"
 
 # .env.local
 NODE_ENV="development"
 ```
+
+> ⚠️ The user will provide their own Discord bot token during setup, so no token should be included in environment variables.
 
 Create a `NEXTAUTH_SECRET`:
 
@@ -47,20 +49,18 @@ npm start
 
 ## Features
 
-- Connect a Discord bot using a token.
-- Create and manage custom bot commands.
-- Map commands to WooCommerce memberships or products.
-- Members can trigger commands to purchase memberships or interact with the website directly via Discord.
-- Admin dashboard for managing bots, commands, and user interactions.
+* Connect a Discord bot using a token.
+* Create and manage custom bot commands.
+* Admin dashboard for managing bots, commands, and user interactions.
 
 ---
 
 ## Tech Stack
 
-- Next.js (App Router)
-- Prisma ORM with MongoDB
-- NextAuth.js for authentication
-- Vercel deployment ready
+* Next.js (App Router)
+* Prisma ORM with MongoDB
+* NextAuth.js for authentication
+* Vercel deployment ready
 
 ---
 
