@@ -29,18 +29,12 @@ export const menu = [
       },
       {
         id: 2,
-        title: "PMPRO Commands",
-        url: "/pmpro",
-        icon: "pmpro.svg",
-      },
-      {
-        id: 3,
         title: "Custom Commands",
         url: "/bot",
         icon: "commands.svg",
       },
       {
-        id: 4,
+        id: 3,
         title: "Plugins",
         url: "/plugins",
         icon: "plugins.svg",
