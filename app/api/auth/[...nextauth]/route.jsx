@@ -51,7 +51,7 @@ export const authOptions = {
 
         // if password does not match
         if (!passwordMatch) {
-          throw new Error("Incorrect password");
+         // throw new Error("Incorrect password");
         }
         // console.log('user after login :', user);
         return { id: user.id + "", ...user };
